@@ -1,0 +1,23 @@
+<div class="panel panel-default" ng-init="getMovie()" >
+  <div class="panel-heading">
+    <h3 class="panel-title">{{movie.title}}</h3>
+  </div>
+  <div class="panel-body">
+  <div class="row">
+   <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+     <img class="thumbnail" src = "{{movie.poster_240x342}}">
+   </div>
+   <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+     <ul class="list-group">
+          <li class="list-group-item"> Orignal Title:{{movie.original_title}}</li>
+          <li class="list-group-item">Release Date: {{movie.release_date}}</li>
+          <li class="list-group-item">Rating: {{movie.rating}}</li>
+          <li class="list-group-item"><a href="{{movie.metacritic}}" class="hvr-grow"><img src="Images/EQXs3lpX.png" style="width:50px;height:50px;" ></a> </li>
+          <li class="list-group-item"><a href="http://www.imdb.com/title/{{movie.imdb}}" class="hvr-grow"><img src="Images/IMDb.png" style="width:50px;height:50px;" ></a> </li>
+        </ul>
+   </div>
+    </div>
+  </div>
+  </div>
+</div>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>
+		My Movies Website
+	</title>
+	<link rel="shortcut icon" href="Images/draft-512.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel= "stylesheet" href="https://getbootstrap.com/examples/cover/cover.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+<body>
+
+<div class="container">
+  <div class="text-center"><a href="#"><img src="Images/Logomakr.png" style="width:200px;height:200px;" ></a></div>
+</div>
+
+<div ng-if="not_found" id="err_msg" class="alert alert-danger">
+  <strong>Not Found!</strong> Movie not found.
+</div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+        <div ng-view></div>
+      </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src = "https://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+  <script src = "app.js"></script>
+  <script src = "controller/movies.js"></script>
+</body>
+</html>
